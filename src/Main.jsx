@@ -15,10 +15,10 @@ const Main = () => {
     '0xB2D63b94Eea1BB34cc0Ef2AB9f447308B1a65Da3' ];
   
   const images = [
-    '/images/example.gif',
-    '/images/example.gif',
-    '/images/example.gif',
-    '/images/example.gif'
+    '/images/1.gif',
+    '/images/2.gif',
+    '/images/3.gif',
+    '/images/4.gif'
   ]
 
 
