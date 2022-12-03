@@ -6,8 +6,8 @@ const Main = () => {
   const [processTwo, setProcessTwo] = useState(false);
   const [firstHalf, setFirstHalf] = useState('');
   const [secondHalf, setSecondHalf] = useState('');
-  const [numberOfPoints, setNumberOfPoints] = useState(1);
-  const [totalPoints , setTotalPoints ] = useState(1280)
+  const numberOfPoints = 1;
+  const totalPoints = 1280;
 
   const values = [ 
     '0xB2D63b94Eea1BB34cc0Ef2AB9f447308B1a65Da1',
@@ -19,7 +19,7 @@ const Main = () => {
     '/images/2.gif',
     '/images/3.gif',
     '/images/4.gif'
-  ]
+  ];
 
 
   const formAction = e => {
