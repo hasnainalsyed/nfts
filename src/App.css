@@ -62,6 +62,15 @@ body .main {
   overflow: hidden;
 }
 
+.logo h1 {
+  font-family: var(--f_adam);
+  color: #fff;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 0.25em;
+  letter-spacing: 0.3em;
+}
+
 .social-list {
   display: flex;
   align-content: center;
@@ -108,7 +117,7 @@ input, select, textarea {
 
 input[type='submit'] {
   position: relative;
-  background: linear-gradient(176deg,#d1aa29,#eabe2a 45%,#ffe281);
+  background: #2208b8;
   color: #fff;
   text-transform: uppercase;
   border: none;
@@ -129,7 +138,7 @@ input[type='submit'] {
 }
 
 button[type=button]:hover, input[type=submit]:hover {
-  background: #c1d90a;
+  background: #34d1b6;
   color: #fff;
 }
 
@@ -156,18 +165,17 @@ button[type=button]:hover, input[type=submit]:hover {
 .kXtkAP {
   border-radius: 50px;
   border: none;
-  background: linear-gradient(176deg, rgb(209, 170, 41) 0%, rgb(234, 190, 42) 45%, rgb(255, 226, 129) 100%);
+  background: #2208b8;
   padding: 10px;
   font-weight: bold;
   color: white;
   width: 100px;
   cursor: pointer;
-  box-shadow: rgb(250 250 250 / 30%) 0px 6px 0px -2px;
   margin-bottom: 10px;
 }
 
 .mint-link {
-  color: #ffcd2a;
+  color: #2208b8;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -193,4 +201,5 @@ button[type=button]:hover, input[type=submit]:hover {
 .points .row .col img {
   max-width: 250px;
   margin: 0 auto;
+  box-shadow: rgb(0 0 0 / 70%) 0px 5px 11px 2px;
 }
