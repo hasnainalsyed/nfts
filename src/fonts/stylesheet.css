@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Adam';
+    src: url('Adam-Bold.eot');
+    src: url('Adam-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Adam-Bold.woff2') format('woff2'),
+        url('Adam-Bold.woff') format('woff'),
+        url('Adam-Bold.ttf') format('truetype'),
+        url('Adam-Bold.svg#Adam-Bold') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adam';
+    src: url('Adam-Medium.eot');
+    src: url('Adam-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Adam-Medium.woff2') format('woff2'),
+        url('Adam-Medium.woff') format('woff'),
+        url('Adam-Medium.ttf') format('truetype'),
+        url('Adam-Medium.svg#Adam-Medium') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adam';
+    src: url('Adam-Light.eot');
+    src: url('Adam-Light.eot?#iefix') format('embedded-opentype'),
+        url('Adam-Light.woff2') format('woff2'),
+        url('Adam-Light.woff') format('woff'),
+        url('Adam-Light.ttf') format('truetype'),
+        url('Adam-Light.svg#Adam-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '.';
+    src: url('136cef1836fe8595ff20ad95e331dda6.eot');
+    src: url('136cef1836fe8595ff20ad95e331dda6.eot?#iefix') format('embedded-opentype'),
+        url('136cef1836fe8595ff20ad95e331dda6.woff2') format('woff2'),
+        url('136cef1836fe8595ff20ad95e331dda6.woff') format('woff'),
+        url('136cef1836fe8595ff20ad95e331dda6.ttf') format('truetype'),
+        url('136cef1836fe8595ff20ad95e331dda6.svg#.') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

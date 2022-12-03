@@ -1,38 +1,196 @@
-.App {
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --f_adam: 'Adam';
+  --f_body: 'Metrisch-Medium-webfont';
+}
+
+@font-face {
+  font-family: 'Metrisch-Medium-webfont';
+  src: url('fonts/Metrisch-Medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adam';
+  src: url('fonts/Adam-Bold.eot');
+  src: url('fonts/Adam-Bold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Adam-Bold.woff2') format('woff2'),
+      url('fonts/Adam-Bold.woff') format('woff'),
+      url('fonts/Adam-Bold.ttf') format('truetype'),
+      url('fonts/Adam-Bold.svg#Adam-Bold') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: var(--f_body);
+  font-weight: normal;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+body .main {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.main .container {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  background-image: none;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 25px 15px;
+  overflow: hidden;
+}
+
+.social-list {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0 0 10px;
+}
+
+.social-list li {
+  margin: 0 2.5px;
+}
+
+.logo img {
+  max-width: 75px;
+}
+
+.main-form {
+  display: flex;
+  flex: 0 1 0%;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  background-image: none;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+input, select, textarea {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+input[type='submit'] {
+  position: relative;
+  background: linear-gradient(176deg,#d1aa29,#eabe2a 45%,#ffe281);
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 600;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  display: block;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 4px;
+  width: 100%;
+  font-weight: 400;
+  letter-spacing: .5rem;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+button[type=button]:hover, input[type=submit]:hover {
+  background: #c1d90a;
+  color: #fff;
+}
+
+.note {
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.string {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.kXtkAP {
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(176deg, rgb(209, 170, 41) 0%, rgb(234, 190, 42) 45%, rgb(255, 226, 129) 100%);
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  width: 100px;
+  cursor: pointer;
+  box-shadow: rgb(250 250 250 / 30%) 0px 6px 0px -2px;
+  margin-bottom: 10px;
+}
+
+.mint-link {
+  color: #ffcd2a;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.points,
+.info-inner {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.points .row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.points .row .col {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.points .row .col img {
+  max-width: 250px;
+  margin: 0 auto;
 }
