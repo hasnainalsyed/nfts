@@ -105,11 +105,11 @@ const Main = () => {
               {!processTwo ? (
                 <div className="info-inner">
                   <p className="string">YOU DONT HAVE ANY SPARKTANS!</p>
-                  <a href="#" target="_blank" className="mint-link" rel="noopener noreferrer">Mint Now</a>
+                  <a href="/" target="_blank" className="mint-link" rel="noopener noreferrer">Mint Now</a>
                 </div>
               ) : (
                 <div className="points">
-                  <a target="_blank" href="#" className="mint-link" rel="noopener noreferrer">MINT</a>
+                  <a target="_blank" href="/" className="mint-link" rel="noopener noreferrer">MINT</a>
                   <p className="string">
                     YOU HAVE {`${numberOfPoints}`} SPARKTANS!
                   </p>
