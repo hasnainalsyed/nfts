@@ -15,10 +15,26 @@ const Main = () => {
     '0xB2D63b94Eea1BB34cc0Ef2AB9f447308B1a65Da3' ];
   
   const images = [
-    '/images/1.gif',
-    '/images/2.gif',
-    '/images/3.gif',
-    '/images/4.gif'
+    {
+      no: 3855,
+      link: '/images/1.gif',
+      points: 12120
+    },
+    {
+      no: 3856,
+      link: '/images/2.gif',
+      points: 12120
+    },
+    {
+      no: 3857,
+      link: '/images/3.gif',
+      points: 12120
+    },
+    {
+      no: 3858,
+      link: '/images/4.gif',
+      points: 12120
+    }
   ];
 
 
@@ -121,11 +137,13 @@ const Main = () => {
                   </p>
 
                   <div className="row">
-                    {images.map(image => {
+                    {images.map(({no, link, points}) => {
                       return (
-                        <div className="col" key={image}>
+                        <div className="col" key={no}>
+                          <p className="string">Sparktan #{no}</p>
+                          <p className="string">Points: {points}</p>
                           <div className="img">
-                            <img src={image} alt="" />
+                            <img src={link} alt="" />
                           </div>
                         </div>
                       )
