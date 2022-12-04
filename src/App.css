@@ -71,6 +71,12 @@ body .main {
   letter-spacing: 0.3em;
 }
 
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 2rem;
+  }
+}
+
 .social-list {
   display: flex;
   align-content: center;
@@ -115,31 +121,39 @@ input, select, textarea {
   font-size: 14px;
 }
 
-input[type='submit'] {
+input[type='submit'],
+.btn {
   position: relative;
   background: #2208b8;
-  color: #fff;
   text-transform: uppercase;
   border: none;
-  font-weight: 600;
   margin-top: 20px;
   padding: 20px;
   font-size: 16px;
-  letter-spacing: 2px;
-  display: block;
   -webkit-appearance: none;
   appearance: none;
-  border-radius: 4px;
   width: 100%;
-  font-weight: 400;
-  letter-spacing: .5rem;
   transition: all .3s;
   cursor: pointer;
+
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--f_body);
+  font-weight: 700;
+  justify-content: center;
 }
 
 button[type=button]:hover, input[type=submit]:hover {
   background: #34d1b6;
   color: #fff;
+}
+
+.btn {
+  max-width: 250px;
+  width: auto;
+  margin: 20px auto 0;
 }
 
 .note {

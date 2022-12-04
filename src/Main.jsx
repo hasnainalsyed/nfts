@@ -91,7 +91,7 @@ const Main = () => {
 
           <div className="main-form">
             <form>
-              <input id="address" name="address" placeholder="Input Address" />
+              <input id="address" name="address" placeholder="Input SGB address" />
               <input onClick={formAction} type="submit" />
             </form>
           </div>
@@ -135,8 +135,10 @@ const Main = () => {
               )}
             </div>
           ) : (
-            <p className="note">PLEASE ENTER A VALID ADDRESS</p>
+            <p className="note">PLEASE ENTER A VALID SGB ADDRESS</p>
           )}
+
+          <button className="btn" type='button'>Connect Wallet</button>
         </div>
       </div>
     </>
